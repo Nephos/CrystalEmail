@@ -11,9 +11,18 @@
 
 ## Installation
 
+Add this to your application's `shard.yml`:
+
+```yaml
+dependencies:
+  CrystalEmail:
+      github: pouleta/CrystalEmail      
+```
+
 ## Usage in Crystal
 
-```ruby
+```crystal
+require "CrystalEmailLib"
 
 # Pure Rfc5322
 CrystalEmail::Rfc5322.validates? "toto@tata" # => true
