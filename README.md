@@ -16,7 +16,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   CrystalEmail:
-      github: pouleta/CrystalEmail      
+      github: Nephos/CrystalEmail      
 ```
 
 ## Usage in Crystal
