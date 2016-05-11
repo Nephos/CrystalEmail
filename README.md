@@ -22,7 +22,7 @@ dependencies:
 ## Usage in Crystal
 
 ```crystal
-require "CrystalEmailLib"
+require "CrystalEmail"
 
 # Pure Rfc5322
 CrystalEmail::Rfc5322.validates? "toto@tata" # => true
