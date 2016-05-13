@@ -31,7 +31,7 @@ module CrystalEmail
     module String
       # Check if the current [::String] instance is a valid domain
       # @return [TrueClass or FalseClass]
-      def is_domain?
+      def is_domain? : Bool
         RubyEmail::Rfc1123.validates? self
       end
     end

@@ -6,7 +6,7 @@ module CrystalEmail
     # @param str [::String] string to match
     # @raise [ArgumentError] if str is not a String
     # @return [TrueClass or FalseClass]
-    def self.validates?(str)
+    def self.validates?(str : String) : Bool
       !!match(str)
     end
 
@@ -14,7 +14,7 @@ module CrystalEmail
     # @param str [::String] string to match
     # @raise [ArgumentError] if str is not a String
     # @return [MatchData or NilClass] matched email with the keys "local" and "domain"
-    def self.match(str)
+    def self.match(str : String)
       raise ArgumentError.new "Cannot validate a `#{str.class}`. Only `String` can be." unless str.is_a?(String)
       str.match regexp
     end
