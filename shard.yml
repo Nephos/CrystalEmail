@@ -1,7 +1,7 @@
 name: CrystalEmail
-version: 0.1.0
+version: v0.2.2.2
 
 authors:
   - Arthur Poulet <arthur.poulet@cryptolab.net>
 
-license: MIT
+license: WTFPL
