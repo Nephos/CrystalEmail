@@ -1,6 +1,7 @@
 v0.2.3
     * Fix minor mistakes in module String
     * Add String helpers
+    * Add RfcXXXX::Public versions for internet usage
     * Add new specs
 
 v0.2.2.2
