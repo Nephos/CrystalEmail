@@ -29,7 +29,7 @@ module CrystalEmail
       # Check if the current [::String] instance is a valid email
       # @return [TrueClass or FalseClass]
       def is_email? : Bool
-        RubyEmail::Rfc5322.validates? self
+        CrystalEmail::Rfc5322.validates? self
       end
     end
 

@@ -1,5 +1,10 @@
+v0.2.3
+    * Fix minor mistakes in module String
+    * Add String helpers
+    * Add new specs
+
 v0.2.2.2
-    Fix License
+    * Fix License
 
 v0.2.2.1
-    Initialize the project, based on RubyEmail (https://github.com/Nephos/RubyEmail)
+    * Initialize the project, based on RubyEmail (https://github.com/Nephos/RubyEmail)

@@ -16,7 +16,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   CrystalEmail:
-      github: Nephos/CrystalEmail      
+      github: Nephos/CrystalEmail
 ```
 
 ## Usage in Crystal
@@ -34,6 +34,7 @@ CrystalEmail::Rfc5322.match "toto" # => nil
 CrystalEmail::Rfc5322::Public.validates? "toto@tata.com" # => true
 CrystalEmail::Rfc5322::Public.match "toto@tata.com" # => #<MatchData "toto@tata" local:"toto" domain:"tata.com">
 
+"toto@toto.toto".is_email? # => true
 ```
 
 

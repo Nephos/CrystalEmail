@@ -25,14 +25,14 @@ module CrystalEmail
     VALIDE = "(?<domain>(?!.{254,})((#{DOT_ATOM_TEXT})|(#{IPV4})))"
 
     # regexp to validate complete email
-    REGEXP = /\\A#{VALIDE}\\Z/
+    REGEXP = /\A#{VALIDE}\Z/
     def self.regexp ; return REGEXP; end
 
     module String
       # Check if the current [::String] instance is a valid domain
       # @return [TrueClass or FalseClass]
       def is_domain? : Bool
-        RubyEmail::Rfc1123.validates? self
+        CrystalEmail::Rfc1123.validates? self
       end
     end
 
