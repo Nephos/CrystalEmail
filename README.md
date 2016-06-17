@@ -11,6 +11,8 @@
 
 ## Installation
 
+Works with crystal 0.17, 0.18
+
 Add this to your application's `shard.yml`:
 
 ```yaml
