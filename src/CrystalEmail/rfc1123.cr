@@ -1,7 +1,6 @@
-#require "./core"
+# require "./core"
 
 module CrystalEmail
-
   # a Domain Name follows the Rfc1123: https://tools.ietf.org/html/rfc1123
   class Rfc1123 < Core
     # one valid character for domain part (first name first character)
@@ -26,7 +25,10 @@ module CrystalEmail
 
     # regexp to validate complete email
     REGEXP = /\A#{VALIDE}\Z/
-    def self.regexp ; return REGEXP; end
+
+    def self.regexp
+      return REGEXP
+    end
 
     module String
       # Check if the current [::String] instance is a valid domain
@@ -35,7 +37,5 @@ module CrystalEmail
         CrystalEmail::Rfc1123.validates? self
       end
     end
-
   end
-
 end

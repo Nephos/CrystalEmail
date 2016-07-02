@@ -1,5 +1,4 @@
 module CrystalEmail
-
   # Abstract class to inherit and complete by adding the REGEXP constant
   class Core
     # Check if the {::String} is a valid email.
@@ -23,7 +22,5 @@ module CrystalEmail
     def self.regexp
       raise NoMethodError.new "Not implemented in #{self.class}"
     end
-
   end
-
 end

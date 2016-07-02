@@ -11,4 +11,4 @@ require "./CrystalEmail/rfc5322/public/string"
 module CrystalEmail
 end
 
-#puts CrystalEmail::Rfc5322.match("toto@toto.toto")
+# puts CrystalEmail::Rfc5322.match("toto@toto.toto")
