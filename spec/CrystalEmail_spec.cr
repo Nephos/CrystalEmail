@@ -23,12 +23,16 @@ describe CrystalEmail do
   end
 
   it "test public" do
+    CrystalEmail::Rfc1123::Public.validates?("toto.toto.to").should eq(true)
+    CrystalEmail::Rfc1123::Public.validates?("toto.to").should eq(true)
     CrystalEmail::Rfc1123::Public.validates?("toto").should eq(false)
+    CrystalEmail::Rfc1123::Public.validates?("toto.t").should eq(false)
+    CrystalEmail::Rfc1123::Public.validates?("toto.toto.t").should eq(false)
     CrystalEmail::Rfc1123::Public.validates?("1.1.1.1").should eq(false)
-    CrystalEmail::Rfc1123::Public.validates?("toto.toto").should eq(true)
+
+    CrystalEmail::Rfc5322::Public.validates?("toto@toto.to").should eq(true)
     CrystalEmail::Rfc5322::Public.validates?("toto@toto").should eq(false)
     CrystalEmail::Rfc5322::Public.validates?("toto@1.1.1.1").should eq(false)
-    CrystalEmail::Rfc5322::Public.validates?("toto@toto.toto").should eq(true)
   end
 
   it "test string helpers" do
