@@ -1,12 +1,21 @@
 # A RFC compliant Email validator
 
+#### Prelude
 - What is an [Email Address](https://en.wikipedia.org/wiki/Email_address) ?
 - What is a [Domain Name](https://en.wikipedia.org/wiki/Hostname) ?
 
+#### Compliance
 - Compliant to the [Rfc 5322](https://tools.ietf.org/html/rfc5322).
 - Compliant to the [Rfc 1123](https://tools.ietf.org/html/rfc1123).
 
-- To do [rfc 6530](https://tools.ietf.org/html/rfc6530).
+#### To do
+- To do : [rfc 6530](https://tools.ietf.org/html/rfc6530).
+- To do : Implement IPv6
+
+#### Notes
+- No ipv6 for now
+- No escaped characters
+- Public email validity (no raw ip, domain withour root domain, ...)
 
 
 ## Installation

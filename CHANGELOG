@@ -1,5 +1,8 @@
-v0.2.3.1
+v0.2.4
 	* Update README
+  * Improve specs
+  * Fix Rfc1123::Public bug (at least 2 char for the root domain)
+  * Fix format
 
 v0.2.3
     * Fix minor mistakes in module String
