@@ -1,4 +1,4 @@
-# A RFC compliant Email validator
+# A RFC compliant Email validator
 
 #### Prelude
 - What is an [Email Address](https://en.wikipedia.org/wiki/Email_address) ?
@@ -20,7 +20,7 @@
 
 ## Installation
 
-Works with crystal 0.17, 0.18
+Works with crystal 0.17 - 0.20.3
 
 Add this to your application's `shard.yml`:
 
