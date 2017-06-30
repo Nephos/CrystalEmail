@@ -20,7 +20,7 @@
 
 ## Installation
 
-Works with crystal 0.17 - 0.20.3
+Works with crystal 0.17 - 0.23.0
 
 Add this to your application's `shard.yml`:
 
