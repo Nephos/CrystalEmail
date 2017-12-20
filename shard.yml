@@ -2,6 +2,8 @@ name: CrystalEmail
 version: v0.2.5
 
 authors:
-  - Arthur Poulet <arthur.poulet@mailoo.org>
+  - Arthur Poulet <arthur.poulet@sceptique.eu>
 
 license: WTFPL
+
+crystal: 0.23.1
