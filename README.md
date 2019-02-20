@@ -27,7 +27,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   CrystalEmail:
-      github: Nephos/CrystalEmail
+      git: https://git.sceptique.eu/Sceptique/CrystalEmail
 ```
 
 ## Usage in Crystal
@@ -54,4 +54,4 @@ CrystalEmail::Rfc5322::Public.match "toto@tata.com" # => #<MatchData "toto@tata"
 Find a bug ? Want a new feature ?
 Create a clear pull request and we'll see :)
 
-- Nephos (poulet_a)
+- Sceptique
