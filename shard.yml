@@ -6,4 +6,4 @@ authors:
 
 license: WTFPL
 
-crystal: "0.36.0, < 2.0.0"
+crystal: ">= 0.36.0, < 2.0.0"
