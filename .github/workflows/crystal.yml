@@ -10,9 +10,8 @@ jobs:
         include:
           - {os: ubuntu-latest, crystal: latest}
           - {os: ubuntu-latest, crystal: nightly}
-          - {os: ubuntu-latest, crystal: 0.36.1}
+          - {os: ubuntu-latest, crystal: 0.36.0}
           - {os: ubuntu-latest, crystal: 1.0.0}
-          - {os: ubuntu-latest, crystal: 0.23.1}
     runs-on: ${{matrix.os}}
     steps:
       - uses: oprypin/install-crystal@v1
