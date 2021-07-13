@@ -1,3 +1,5 @@
+**Migrated to <https://git.sceptique.eu/Sceptique/CrystalEmail>**
+
 # A RFC compliant Email validator
 
 #### Prelude
