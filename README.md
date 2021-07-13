@@ -30,6 +30,7 @@ Add this to your application's `shard.yml`:
 dependencies:
   CrystalEmail:
       git: https://git.sceptique.eu/Sceptique/CrystalEmail
+      branch: master
 ```
 
 ## Usage in Crystal
