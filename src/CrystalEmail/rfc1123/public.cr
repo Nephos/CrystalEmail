@@ -17,7 +17,7 @@ module CrystalEmail
       REGEXP = /\A#{VALIDE}\Z/
 
       def self.regexp
-        return REGEXP
+        REGEXP
       end
 
       module String
