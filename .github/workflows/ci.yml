@@ -1,0 +1,45 @@
+name: CI
+on:
+  push:
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+    container: crystallang/crystal:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Format
+        run: crystal tool format --check
+      - name: Lint
+        uses: crystal-ameba/github-action@v0.2.12
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        crystal:
+          - nightly
+          - 1.0.0
+          - 0.36.1
+          - 0.35.1
+          - 0.34.0
+          - 0.33.0
+          - 0.32.1
+          - 0.31.1
+          - 0.30.1
+          - 0.29.0
+          - 0.28.0
+          - 0.27.2
+          - 0.26.1
+          - 0.25.1
+          - 0.24.2
+    steps:
+      - uses: actions/checkout@v2
+      - uses: oprypin/install-crystal@v1
+        with:
+          crystal: ${{ matrix.crystal }}
+      - name: Tests
+        run: crystal spec --error-trace -v

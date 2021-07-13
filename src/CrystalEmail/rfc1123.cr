@@ -8,7 +8,7 @@ module CrystalEmail
     # one valid character for domain part (first name all other characters)
     ATEXT_FIRST_ALL = "([A-Za-z0-9])"
     # one valid character for domain part (all other names)
-    ATEXT_ALL = "([A-Za-z0-9\-])"
+    ATEXT_ALL = "([A-Za-z0-9-])"
 
     # a valid string for domain part (first name)
     ATOM_FIRST = "#{ATEXT_FIRST_FIRST}#{ATEXT_ALL}{0,62}"
@@ -27,7 +27,7 @@ module CrystalEmail
     REGEXP = /\A#{VALIDE}\Z/
 
     def self.regexp
-      return REGEXP
+      REGEXP
     end
 
     module String
