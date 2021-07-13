@@ -1,6 +1,6 @@
-**Migrated to <https://git.sceptique.eu/Sceptique/CrystalEmail>**
-
 # A RFC compliant Email validator
+
+**Migrated to <https://git.sceptique.eu/Sceptique/CrystalEmail>**
 
 #### Prelude
 - What is an [Email Address](https://en.wikipedia.org/wiki/Email_address) ?
