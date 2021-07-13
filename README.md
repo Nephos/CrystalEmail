@@ -30,18 +30,20 @@ dependencies:
       git: https://git.sceptique.eu/Sceptique/CrystalEmail
 ```
 
-## Usage in Crystal
+## Usage in Crystal
 
 ```crystal
 require "CrystalEmail"
 
 # Pure Rfc5322
+# this is what you want if you need to allow local domains
 CrystalEmail::Rfc5322.validates? "toto@tata" # => true
 CrystalEmail::Rfc5322.match "toto@tata" # => #<MatchData "toto@tata" local:"toto" domain:"tata">
 CrystalEmail::Rfc5322.validates? "toto" # => false
 CrystalEmail::Rfc5322.match "toto" # => nil
 
 # Rfc5322 + Internet basic usage
+# most of the website on internet will require a domain like "domain.thing"
 CrystalEmail::Rfc5322::Public.validates? "toto@tata.com" # => true
 CrystalEmail::Rfc5322::Public.match "toto@tata.com" # => #<MatchData "toto@tata" local:"toto" domain:"tata.com">
 
