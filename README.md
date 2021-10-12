@@ -1,5 +1,7 @@
 # A RFC compliant Email validator
 
+[![Build Status](https://drone.sceptique.eu/api/badges/Sceptique/CrystalEmail/status.svg)](https://drone.sceptique.eu/Sceptique/CrystalEmail)
+
 **Migrated to <https://git.sceptique.eu/Sceptique/CrystalEmail>**
 
 #### Prelude
@@ -22,7 +24,7 @@
 
 ## Installation
 
-Works with crystal 0.17 - 0.27.0
+Tested with crystal 0.17 - 1.1.0
 
 Add this to your application's `shard.yml`:
 
